@@ -1,5 +1,0 @@
-<html> <body>
- <h1> Paginafdfdfdfd </h1>
- <a href="https://lemmykilmister.github.io/LND2017/Practica7">Practica 2</a>
- 
-  </body></html>
