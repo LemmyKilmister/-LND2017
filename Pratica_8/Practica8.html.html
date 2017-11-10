@@ -1,0 +1,154 @@
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="utf-8">
+    
+    <script type="text/javacsript">
+    
+    window.onload = function() {
+    var files = document.querySelectorAll("input[type=file]");
+    files[0].addEventListener("change", function(e) {
+        if(this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) { document.getElementById("preview").setAttribute("src", e.target.result); }
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+}
+    
+     </script>
+    
+</head>
+<body>
+    <h1>Por favor, introduce tus datos</h1>
+    <form>
+
+<fieldset>
+    <legend>Tu cara</legend>
+    
+    <label> Foto:</label> <input type="file" name="archivo">
+    <br>
+    <label>Previsualizacion de imagen:</label><img src="" id="preview" required>
+    <br>
+    <p></p>
+     </fieldset>
+        <p></p>
+    <fieldset>
+    <legend>Datos generales</legend>
+        
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name= "Nombre"autofocus="autofocus" required/>
+        <br>
+        
+        <label for ="Genero">Genero:</label>
+        <input type="radio" name="option" value="Hombre"required>hombre 
+        <input type ="radio" name="option" value = "Mujer"required>Mujer
+        <br>
+        <label for= "edad">Edad:</label>
+        <input type="number"min="18" max = "100" step = "1" value="18" name="edad">
+        <br>
+        <label for="Fecha de nacimiento">Fecha de nacimiento:</label>
+        <input type="date" min="1/1/1945" max="1/1/2000">
+        <br>
+        <label for ="Color favorito">Color favorito:</label>
+        <input type="color">
+        <br>
+        <label for ="Pais">Pais:</label>
+        <select name="Pais">
+        <option value="Castilla">Castilla</option>
+        <option value="Aragon">Aragon</option>
+        <option value ="Nueva España">Nueva España</option>
+        </select>
+        
+        
+        </fieldset>
+    
+    <p></p>
+    
+        <fieldset>
+        <legend>Otras caracteristicas</legend>
+            
+        <label for ="Altura">Altura:</label> 
+        
+            <div><label id="bajo">bajo</label><input type="range" min="0.50" max="2.50" step="1"> 
+                <label id="alto">alto</label></div>
+            <br>
+            <label for="salario">Salario:</label>
+            <div><label id="pobre">pobre</label><input type="range" min="0.50" max="2.50" step="1"> 
+                <label id="rico">rico</label> </div>
+        
+                
+        </fieldset>
+        <p></p>
+    
+        <fieldset>
+            
+            <legend>Informacion de contacto</legend>
+            
+            <label for ="Email">Email:</label>
+            <input type="email"required>
+            <br>
+            <label for = telefono>Telefono:</label>
+            <input type="tel">
+                <br>
+            <label for= "direccion">Direccion</label> <textarea rows="3" cols="80" name="componentes"></textarea>
+                <br>
+                <label for="Metodo contacto:">Metodo de contacto:</label>
+          <div>     
+         <label for= "email1">Email</label> <input type="checkbox" name="Email">
+         <label for="wasa">Whatsapp</label> <input type="checkbox"name="Whatsapp">
+          <label for= sk>Skype</label><input type="checkbox"name="Skype">
+          </div>
+                
+        </fieldset>
+        
+        
+        
+        
+        
+        
+        
+        <input type="submit"value="Enviar">
+        
+        </form>
+</body>
+</html>
+
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
