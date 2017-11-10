@@ -1,0 +1,60 @@
+body > header {
+    width: 90%px;
+    height: 60px;
+    background-color:black;
+    color:white;
+    text-align: center;
+}
+
+
+
+
+
+
+nav {
+    float: left;
+    width: 10%;
+    height: 350px;
+    background-color: lightgray;
+    
+}
+
+ul a {
+    text-decoration:none;
+    color : black;
+    margin-left: -30px;
+    
+    
+    
+    
+
+        
+}
+
+ul li{
+    
+    list-style-type: none;
+    
+}
+
+article{
+    
+    float: left;
+    width: 40%;
+    margin:  auto;
+    padding: 5px;
+    
+}
+
+footer{
+    clear: both;
+    float:left;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+}
+
+
+
