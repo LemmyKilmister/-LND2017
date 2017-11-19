@@ -1,0 +1,140 @@
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    
+}
+body {
+   text-align: center;
+   
+    
+}
+
+#elhead {
+    
+    padding:2%;
+    font-family: cursive;
+}
+
+#punto1{
+    box-sizing: content-box;
+    
+    background-color: pink;
+    text-align: right;
+    float: right;
+    clear: both;
+    width: 100px;
+    padding:10px 12px;
+    margin: 0px;
+    text-align: center;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    
+    
+    
+}
+
+#punto2{
+    box-sizing: content-box;
+    background-color: red;
+    color:white;
+    text-align: right;
+    float: right;
+    clear: both;
+    width: 100px;
+    padding:10px 12px;
+    margin: 0px;
+    text-align: center;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    
+    
+    
+}
+
+#punto3{
+    box-sizing: content-box;
+    
+    background-color: lightyellow;
+    text-align: right;
+    float: right;
+    clear: both;
+    width: 100px;
+    padding:10px 12px;
+    margin: 0px;
+    text-align: center;
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    
+    
+    
+}
+
+
+main{
+    
+   text-align: center;
+    margin: auto;
+}
+
+section {
+     
+    
+    box-sizing: content-box;
+    float:left;
+    
+    background-color: gainsboro;
+    margin: 1%;
+
+    text-align: left;
+    width: 29.8%;
+    border-color:black;
+    border-width: 2px;
+    border-style:inset;
+    
+    
+    
+    
+}
+
+section p{
+    
+    clear: both;
+    padding: 10px 20px;
+    font-family: cursive;
+    
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 767px) {   
+
+section,#elhead {
+   width: 100%;
+    
+}
+
+}
+
+@media screen  (min-width: 768px) {   
+
+section,#elhead {
+   width: 100%;
+    
+}
+
+}
+
+
