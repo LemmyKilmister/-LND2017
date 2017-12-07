@@ -1,0 +1,227 @@
+*{
+ 
+ margin:0px;
+ padding:0px;
+}
+
+body{
+    
+    background-color: khaki;
+    
+}
+
+nav{
+ 
+ 
+}
+
+#conjunto{
+ 
+display:flex;
+ justify-content: space-between;
+}
+
+
+
+
+
+.navegacion{
+	width: 100%;
+	margin: 30px auto;
+	background: #fff;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+ text-align: center;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 100px;
+	visibility: hidden;
+ justify-content: space-between;
+ 
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+main{
+    
+   
+    margin: auto;
+}
+
+#elhead{
+    
+    font-family: cursive;
+}
+ 
+article > section{
+    
+    border: 2px solid black;
+}
+
+
+article {
+    
+
+    
+   
+    margin: 5px;
+    padding: 5px;
+    margin: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+     
+   
+    
+}
+
+section {
+    
+    
+    background-color: darkgray;
+    margin: 15px;
+    font-family: cursive;
+   
+    flex-grow: 1;
+}
+
+section p{
+
+ padding:10px;
+    margin:5px;
+    clear:both;
+
+
+}
+
+
+
+section header{
+    min-width: 100px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    box-sizing: content-box;
+    float:right;
+     border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    color: black;
+    font-family: cursive;
+    margin 0%;
+}
+
+#punto1{
+    
+    background-color: pink;
+   
+    
+}
+
+#punto2{
+    
+    background-color: red;
+    
+}
+
+#punto3{
+    
+    background-color: yellow;
+}
+
+div{
+    
+    display: flex;
+   
+    justify-content: center;
+    padding:0px;
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {   
+    article{
+        display:flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-around;
+        width: 33,3%
+        
+    }
+
+
+}
+
+@media screen and (min-width:0px) and(max-width:767px)  {   
+
+article {
+    display: flex;
+   flex-direction: row;
+    justify-content: space-around;
+    width:33,3%;
+    
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {  
+    
+    article {
+        flex-wrap: wrap;
+    }
+    section:first-of-type,section:nth-child(2){
+        
+        width: 45%;
+        
+    }
+    
+        
+        
+    
+    section:last-of-type{
+     
+        width: 100%;
+       
+        
+    }
+}
+
