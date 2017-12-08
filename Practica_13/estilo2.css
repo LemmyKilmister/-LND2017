@@ -1,0 +1,77 @@
+.conjunto {
+    width: 1300px;
+    background: gray;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+}
+
+.partecentral {
+    width: 60%;   
+    height: 250px;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-around; 
+
+}
+
+.primero {
+   
+    height: 250px;
+     width: 20%; 
+    background: yellow;
+    
+       
+    
+}
+
+
+
+.segundo {
+    width:  35%;   
+    height: 110px;
+    background: green;
+     
+    
+}
+
+.tercero {
+    height: 110px;
+    width: 30%; 
+    
+    background-color: orange;
+    
+}
+
+.cuarto {
+      
+    height: 110px;
+    background-color: blue;
+     width: 30%;
+}
+
+.quinto {    
+     background-color: darkorange;
+    width: 30%; 
+      height: 110px;
+   
+    
+ 
+}
+
+.sexto {
+    width:  63%; 
+       height: 110px;
+    background-color: yellow;
+    
+
+}
+
+.septimo {
+     width: 20%;  
+      height: 250px;
+    background-color:violet;
+   
+
+}
