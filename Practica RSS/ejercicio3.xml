@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><rss version="2.0">
+
+<channel>
+  <title>Pagina principal de santi</title>
+  <language>es-es</language>
+ 
+  <link>http://moodle.cifpmajadamarcial.com</link>
+  <copyright><![CDATA[Copyright mio]]></copyright>
+  <description>Pruebas para rss imaginario</description>
+  <item>
+   <author>riveira@gmail.com</author>
+    <title>Primer title</title>
+    <guid isPermaLink="true"><![CDATA[http://www.autofacil.es/evo-magazine/2017/08/01/abarth-595-competizione-prueba-fondo/39659.html]]></guid>
+    <link>http://moodle.cifpmajadamarcial.com</link>
+    <description>Aqui probamos este item</description>
+  </item>
+  <item>
+    <title>Prueba2</title>
+    <link>http://moodle.cifpmajadamarcial.coml</link>
+    <description>Aqui probaremos otro item</description>
+  </item>
+</channel>
+
+</rss>
