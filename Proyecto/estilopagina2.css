@@ -1,0 +1,229 @@
+*{
+    margin:0px;
+    padding: 0px;
+     
+}
+esquema{
+ 
+ display: block;
+ 
+}
+
+#grafi{
+ border: 4px solid black;
+
+ 
+}
+caption{
+ 
+ margin:10px;
+}
+
+#tercero{
+ 
+ display: flex;
+ justify-content: space-around;
+}
+table, th, td {
+    border: 2px solid darkred;
+    border-collapse: collapse;
+ text-align: center;
+ margin:10px;
+ 
+ width:300px;
+ justify-content: space-around;
+ 
+   
+    
+}
+section{
+   
+   display: flex;
+   flex-direction: column;
+    flex-grow: 1;
+   justify-content: space-around;
+    width:100%;
+  
+}
+
+h1{
+ 
+ text-align: center;
+ margin-top: 30px;
+}
+
+
+
+article{
+    
+    background-color: darkred;
+    
+   
+    width:33,3%
+  
+}
+
+section #segundo{
+ 
+ 
+  border-bottom: 2px solid black;
+}
+
+section #informacion1{
+ 
+ border-bottom: 2px solid black;
+ margin :3px;
+}
+
+#Titulo{
+    
+    text-align: center;
+    background-color: floralwhite;
+    color:black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+
+#informacion1{
+ display: flex;
+ margin:10px;
+ justify-content: space-around;
+  
+}
+iframe{
+ 
+ border: 5px solid darkred;
+ margin-bottom: 5px;
+}
+
+
+
+
+
+#primeroh1{
+ 
+ margin-top:10px;
+}
+
+#primero{
+    
+    
+    
+    flex-grow: 1;
+  display: inline-block;
+ justify-content: space-around;
+
+ 
+   
+   
+    
+    
+}
+
+#Lista{
+ 
+ display: flex;
+ justify-content: space-around;
+ 
+ 
+}
+
+#segundo{
+ 
+ background-color:silver;
+ border:3px;
+ border-color: red;
+}
+
+#tercero{
+ 
+ background-color: silver;
+}
+
+#cuarto{
+ 
+ background-color: silver;
+}
+
+
+
+
+header p{
+ 
+ font-family: 'Crimson Text', serif;
+ font-size: 200%;
+ 
+}
+
+p{
+ 
+ margin:30px;
+ margin-right:50px;
+ margin-left:50px;
+ 
+ 
+}
+
+
+ul a{
+    
+    
+    background-color: floralwhite;
+    border-radius: 5px;
+    margin:15px;
+    padding:15px;
+    font-family:inherit;
+    text-decoration: none;
+    color:darkred;
+    
+    
+    
+}
+
+ul a:hover{
+ 
+ background-color: darkred;
+ color:floralwhite;
+}
+
+footer{
+    
+    background-color:darkred;
+     color: silver;
+    text-align: center;
+ 
+}
+
+footer a{
+ 
+ color:silver;
+
+}
+
+
+@media screen and (max-width: 523px) {   
+    section{
+        display:flex;
+        
+        flex-grow: 1;
+        justify-content: space-around;
+        width: 33,3%
+        
+    }
+ 
+ article, header, footer{
+  
+  min-width: 522px;
+ }
+ 
+ #Lista{
+  
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+ }
+
+
+}
+    
