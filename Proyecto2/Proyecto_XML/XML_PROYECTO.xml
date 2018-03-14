@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<registro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XSDPROYECTO.xsd">
+  <datosempresario ISBN="3456739">
+    <nombre>David</nombre>
+    <edad>20</edad>
+    <pais>España</pais>
+    <lugarNacimiento>Murcia</lugarNacimiento>
+    <dni>76547383j</dni>
+  </datosempresario>
+  <empresa>
+    <nombreEmpresa>American</nombreEmpresa>
+    <direccion>calle general</direccion>
+    <tipoEstablecimiento>comida rapida</tipoEstablecimiento>
+    <antiguedad>20 años</antiguedad>
+    <Nempleados>5</Nempleados>
+    <ganancia>3700</ganancia> 
+    <licencias>
+      <licencia>Apertura</licencia>
+      <licencia>De obra</licencia>
+      <licencia>Licencia comercial</licencia>
+      <licencia>Licor</licencia>
+      <licencia>Música</licencia>
+    </licencias>
+    <medidasPrevencion>
+      <medida>extintores</medida>
+      <medida>Plan de incendios</medida>
+      <medida>Medidas higienicas</medida>
+      <medida>Medidas de insonorizacion</medida>
+      <medida>Alumbrado de emergencias</medida>
+    </medidasPrevencion>
+    <Empleados>
+      <empleado>
+        <nombreEmpleado>Paco</nombreEmpleado>
+        <HorasTrabajadas>24</HorasTrabajadas>
+        <tipoContrato>Temporal</tipoContrato>
+      </empleado>
+    </Empleados>
+    <impuestos>
+      <tipoImpuesto>IVA</tipoImpuesto>
+    </impuestos>
+    <socios>
+      <socio>
+        <nombreSocio>Juan</nombreSocio>
+        <edad>40</edad>
+        <porcentajeRetribuido>15</porcentajeRetribuido>
+        <lugarNacimiento>Asturias</lugarNacimiento>
+        <dni>87123098h</dni>
+      </socio>
+    </socios>
+  </empresa>
+  <datosempresario ISBN="3424789">
+    <nombre>Erwin</nombre>
+    <edad>50</edad>
+    <pais>Alemania</pais>
+    <lugarNacimiento>Berlin</lugarNacimiento>
+    <dni>33484396k</dni>
+  </datosempresario>
+  <empresa>
+    <nombreEmpresa>Cambia tu pieza</nombreEmpresa>
+    <direccion>calle juan de austria</direccion>
+    <tipoEstablecimiento>taller</tipoEstablecimiento>
+    <antiguedad>1 año</antiguedad>
+    <Nempleados>5</Nempleados>
+    <ganancia>3456</ganancia>
+    <licencias>
+      <licencia>establ</licencia>
+      <licencia>estable</licencia>
+    </licencias>
+    <medidasPrevencion>
+      <medida>Plan de incendios</medida>
+      <medida>Alumbrado de emergencias</medida>
+    </medidasPrevencion>
+    <Empleados>
+      <empleado>
+        <nombreEmpleado>Manolo</nombreEmpleado>
+        <HorasTrabajadas>312</HorasTrabajadas>
+        <edad>18</edad>
+        <lugarNacimiento>Francia</lugarNacimiento>
+        <tipoContrato>Indefinido</tipoContrato>
+      </empleado>
+      <empleado>
+        <nombreEmpleado>Chedey</nombreEmpleado>
+        <HorasTrabajadas>138</HorasTrabajadas>
+        <edad>15</edad>
+        <lugarNacimiento>Las Bahamas</lugarNacimiento>
+        <tipoContrato>Parcial</tipoContrato>
+      </empleado>
+    </Empleados>
+    <impuestos>
+      <tipoImpuesto>IRPF</tipoImpuesto>
+    </impuestos>
+    <socios>
+      <socio>
+        <nombreSocio>Alejadro</nombreSocio>
+        <edad>80</edad>
+        <porcentajeRetribuido>45</porcentajeRetribuido>
+        <lugarNacimiento>Galicia</lugarNacimiento>
+        <dni>36475847y</dni>
+      </socio>
+      <socio>
+        <nombreSocio>Javi</nombreSocio>
+        <edad>34</edad>
+        <porcentajeRetribuido>7</porcentajeRetribuido>
+        <lugarNacimiento>Asturias</lugarNacimiento>
+        <dni>36565847y</dni>
+      </socio>
+    </socios>
+  </empresa>
+</registro>

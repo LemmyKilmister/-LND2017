@@ -1,0 +1,33 @@
+h2{
+    
+    text-align: center;
+    font-family: cursive;
+}
+
+table{
+    
+    background-color: black;
+}
+
+th{
+    background-color: green;
+}
+
+td{
+    
+    background-color: yellow;
+}
+
+section{
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+article{
+    
+    display: flex;
+    font-family: cursive;
+    justify-content: center;
+}
