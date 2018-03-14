@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--DEFINICION DE ELEMENTOS COMPUESTOS-->
+<xs:element name="registro">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="datosempresario"/>
+       <xs:element ref="empresa"/>
+       <xs:element ref="datosempresario"/>
+       <xs:element ref="empresa"/>
+     </xs:sequence>
+   </xs:complexType>
+</xs:element>
+<xs:element name="datosempresario">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="nombre"/>
+       <xs:element ref="edad"/>
+       <xs:element ref="pais" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="lugarNacimiento" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="dni" minOccurs="0" maxOccurs="unbounded"/>
+     </xs:sequence>
+     <xs:attribute name="ISBN"/>
+   </xs:complexType>
+</xs:element>
+<xs:element name="empresa">
+  <xs:complexType>
+   <xs:sequence>
+     <xs:element ref="nombreEmpresa"/>
+     <xs:element ref="direccion"/>
+     <xs:element ref="tipoEstablecimiento"/>
+     <xs:element ref="antiguedad"/>
+     <xs:element ref="Nempleados"/>
+     <xs:element ref="ganancia"/>
+     <xs:element ref="licencias" maxOccurs="unbounded"/>
+     <xs:element ref="medidasPrevencion"/>
+     <xs:element ref="Empleados"/>
+     <xs:element ref="impuestos"/>
+     <xs:element ref="socios" maxOccurs="unbounded"/>
+   </xs:sequence>
+  </xs:complexType>
+</xs:element>
+<xs:element name="licencias">
+<xs:complexType>
+   <xs:sequence>
+     <xs:element ref="licencia" minOccurs="0" maxOccurs= "10"/>
+   </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="medidasPrevencion">
+<xs:complexType>
+   <xs:sequence>
+     <xs:element ref="medida" minOccurs="0" maxOccurs="unbounded"/>
+   </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Empleados">
+<xs:complexType>
+   <xs:sequence>
+   <xs:element ref="empleado"  maxOccurs="unbounded"/>
+   </xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="empleado">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="nombreEmpleado" minOccurs="1" maxOccurs="unbounded"/>
+       <xs:element ref="HorasTrabajadas" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="edad" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="lugarNacimiento" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="tipoContrato" minOccurs="0" maxOccurs="unbounded"/>
+     </xs:sequence>
+   </xs:complexType>
+</xs:element>
+<xs:element name="impuestos">
+   <xs:complexType>
+     <xs:sequence>
+     <xs:element ref="tipoImpuesto"/>
+     </xs:sequence>
+   </xs:complexType>
+</xs:element>
+<xs:element name="socios">
+   <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="socio" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:element>
+<xs:element name="socio">
+   <xs:complexType>
+     <xs:sequence>
+       <xs:element ref="nombreSocio" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="edad" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="porcentajeRetribuido" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="lugarNacimiento" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="dni" minOccurs="0" maxOccurs="unbounded"/>
+       </xs:sequence>
+   </xs:complexType>
+</xs:element>
+<!-- DEFINICION DE ELEMENTOS SIMPLES-->
+<xs:element name="nombre">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3"/>
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="edad">
+ <xs:simpleType>
+  <xs:restriction base='xs:integer'>
+    <xs:maxExclusive value='120'/>
+    <xs:minExclusive value="12"/>
+  </xs:restriction>
+ </xs:simpleType>
+</xs:element>
+<xs:element name="pais">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="45"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="lugarNacimiento">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="dni">
+<xs:simpleType>
+   <xs:restriction base="xs:string">
+     <xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][a-z]"/>
+   </xs:restriction>
+</xs:simpleType>
+</xs:element>
+<xs:element name="nombreEmpresa" type="xs:string"/>
+<xs:element name="direccion">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="45"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="tipoEstablecimiento">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="20"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="Nempleados">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minExclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="ganancia">
+  <xs:simpleType>
+    <xs:restriction base="xs:float">
+      <xs:minExclusive value="700"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="licencia" type="xs:string"/>
+<xs:element name="medida" type="xs:string"/>
+<xs:element name="nombreEmpleado">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3"/>
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name='HorasTrabajadas'>
+ <xs:simpleType>
+  <xs:restriction base='xs:decimal'>
+    <xs:fractionDigits value='2'/>
+  </xs:restriction>
+ </xs:simpleType>
+</xs:element>
+<xs:element name="tipoContrato">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Parcial"/>
+      <xs:enumeration value="Indefinido"/>
+      <xs:enumeration value="Temporal"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="tipoImpuesto">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="45"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="nombreSocio">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:minLength value="3"/>
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="porcentajeRetribuido">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:maxExclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<xs:element name="antiguedad" type="xs:string"/>
+</xs:schema>
