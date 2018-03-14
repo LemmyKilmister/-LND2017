@@ -1,0 +1,117 @@
+body{
+	
+	background-color: whitesmoke;
+}
+
+table{
+	background-color: black;
+	align-content: center;
+	object-position: center;
+	
+}
+
+#tabla{
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+header{
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+h1{
+	
+	text-align: center;
+	color:black;
+	font-family:fantasy;
+	
+}
+
+h2{
+	
+	text-align: center;
+	color:black;
+	font-family:fantasy;
+	
+}
+
+
+th{
+	
+	text-align: center;
+	background-color: orange;
+	font-size: 1.5em;
+	border-collapse:collapse;
+	
+}
+
+td{
+	
+	text-align: center;
+	background-color:steelblue;
+	font-size: 1.5em;
+	
+}
+
+#empresa1{
+	
+	background-color: violet;
+}
+
+#empleado{
+	
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+article{
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#prevencion1{
+	
+	
+	font-family: monospace;
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: row;
+}
+
+#socios1{
+	
+	display: flex;
+	justify-content: space-around;
+	font-family: monospace;
+	font-size: 1.5em;
+}
+
+#bajo{
+    
+    background-color: red;
+}
+
+p
+{
+    
+    font-family: cursive;
+    text-align: left;
+    
+}
+
+setion{
+    
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
