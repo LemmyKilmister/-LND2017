@@ -1,0 +1,51 @@
+<html>
+<head>
+   <script>
+       function analisis(){
+  var valores = [true, 5, false, 'hola', 'adios', 2];
+  var primerovalor = valores[1];
+  var segundovalor = valores[5];
+  var texto1 = valores[3];
+  var texto2 = valores[4];
+  var booleano1 = valores[0];
+  var booleano2 = valores[2];
+  var resultado;
+        resultado = texto1 > texto2;
+  alert(texto1+ ' > ' +texto2+ ' = '+resultado);  
+  
+  resultado = texto1 < texto2;
+  alert(texto1+ ' < ' +texto2+ ' = '+resultado);
+  
+  
+  resultado = booleano1 || booleano2;
+  alert(booleano1+ ' OR ' +booleano2+ ' = '+resultado);
+
+  resultado = booleano1 && booleano2;
+  alert(booleano1+ ' AND ' +booleano2+ ' = '+resultado);
+        resultado = primerovalor / segundovalor;
+  alert(primerovalor+ ' / '+segundovalor+ ' = '+resultado);
+  
+  resultado = primerovalor * segundovalor;
+  alert(primerovalor+ ' * '+segundovalor+ ' = '+resultado);
+
+  resultado = primerovalor + segundovalor;
+  alert(primerovalor+ ' + '+segundovalor+ ' = '+resultado);
+
+  resultado = primerovalor - segundovalor;
+  alert(primerovalor+ ' - '+segundovalor+ ' = '+resultado);
+
+  resultado = primerovalor % segundovalor;
+  alert(valor1+ ' % '+valor2+ ' = '+resultado);
+       
+  
+       }
+  
+  
+
+   </script>
+    </head>
+    <body onload="analisis()">
+     
+   
+    </body>
+</html>
