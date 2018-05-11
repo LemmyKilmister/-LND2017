@@ -1,0 +1,62 @@
+<html>
+ <head>
+    <script>
+       function lanzadera(){
+          
+          sacanumero();
+          sacanumero2();
+          
+       }
+       function sacanumero(){
+   var numerosAleatorios = new Array();
+       var GeneradorNumero;
+       
+       for(var i = 0;i<50;i++){
+          
+          GeneradorNumero = Math.round(Math.random() * 100);
+          numerosAleatorios.push(GeneradorNumero);
+          
+       }
+       
+      for(var index in numerosAleatorios){
+         document.getElementById("texto").innerHTML +=' '+ numerosAleatorios[index];
+         
+      }
+   }
+       function sacanumero2(){
+           var numerosAleatorios = new Array();
+           var GeneradorNumero;
+          
+          for(var i = 0;i<50;i++){
+          
+          GeneradorNumero = Math.round(Math.random() * 100);
+          numerosAleatorios.push(GeneradorNumero);
+          
+       }
+          
+          for(var numero of numerosAleatorios){
+             
+             document.getElementById("texto2").innerHTML +=' '+ numero;
+          }
+       }
+       
+       
+</script>
+    </head>
+ <body onload="lanzadera()">
+    <h1>For in</h1>
+    <p id="texto"></p>
+    <hr>
+    <hr>
+    <h1>For of</h1>
+    <p id="texto2"></p>
+    <hr>
+    <hr>
+    <h1></h1>
+
+    
+     
+  
+    
+    </body>
+</html>
